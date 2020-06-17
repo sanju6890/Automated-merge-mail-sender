@@ -1,14 +1,16 @@
+# sender is the another python file which acts as dependency contains subject, body, and sender email_id and passsword
 import sender
 import smtplib
-
-name_list=[ ["Sanjay","sanjay6890@mail.com"],
-            ["Tech-deets","itworld.6890@gmail.com"],
-            ["Sanju","sanjusaikap2001@gmail.com"]
+# a list of names and e-mail ids
+name_list=[ ["Sanjay","sanjay@gmail.com"],
+            ["Tech-deets","itworld@gmail.com"],
+            ["Gopi","gopi@gmail.com"]
           ]
 
 print('\n\n************************ WELCOME TO PYTHON E-mail SENDER *************************\n')
 print('processing all e-mails to send.........\n')
 
+# send_email() is the function which creates the SMTP request and send the e-mail.
 def send_email(subject,body,reciver_id,reciver_name):
     try:
         server=smtplib.SMTP_SSL("smtp.gmail.com",465)         

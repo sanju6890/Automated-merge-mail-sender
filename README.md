@@ -1,2 +1,2 @@
-# Python-merge-Mail-Sender
+# Automated-merge-Mail-Sender(Python3)
 This is a python program to merge the mail body and subject with different names and send that email to the corresponding email ids.
